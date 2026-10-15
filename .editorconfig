@@ -1,0 +1,30 @@
+# Match the existing formatting for Go, HTML, Markdown, YAML and NDJSON.
+# Do not set a global line ending rule; some fixtures are byte-sensitive.
+root = true
+
+[*.{go,html,htm,md,markdown,yaml,yml,ndjson}]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+
+[*.go]
+indent_style = tab
+indent_size = tab
+tab_width = 8
+
+[*.{html,htm}]
+indent_style = space
+indent_size = 2
+
+[*.{md,markdown}]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false
+
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
+
+[*.ndjson]
+indent_style = space
+indent_size = 2
